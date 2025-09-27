@@ -105,3 +105,128 @@ h1 {
     margin: 2rem 0;
 }
 
+/* hover */
+.flip-button:hover {
+    background: rgb(3, 63, 5);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(57, 6, 94, 0.942);
+}
+
+.flip-button:disabled {
+    background: #555;
+    color: #888;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.clear-button {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.clear-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.3);
+}
+
+.result {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    min-height: 2rem;
+    color: #074f1f;
+    font-weight: bold;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 1.5rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stat-card h3 {
+    color: #1d720a;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.history {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.history h3 {
+    color: #1d720a;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.history-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+.history-item {
+    padding: 0.3rem 0.8em;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.history-item.heads {
+    background: rgba(201, 170, 113, 0.2);
+    color: #c9aa71;
+    border: 1px solid #c9aa71;
+}
+
+
+.history-item.tails {
+    background: rgba(183, 134, 11, 0.2);
+    color: #b8860b;
+    border: 1px solid #b8860b;
+}
+
+@media (max-width: 640px) {
+    h1{
+        font-size: 1rem;
+    }
+    .coin {
+        width: 120px; 
+        height: 120px;
+    }
+    .coin-face {
+        font-size: 3rem;
+    }
+    .stats {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
