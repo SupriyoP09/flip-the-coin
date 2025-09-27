@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Flip Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🪙 Coin Flip Game</h1>
+
+        <div class="coin-container">
+            <div class="coin" id="coin">
+                <div class="coin-face heads">H</div>
+                <div class="coin-face tails">T</div>
+            </div>
+        </div>
+
+        <button class="flip-button" id="flipbutton">FLIP COIN</button>
+        <div class="result" id="result"></div>
+
+        <div class="stats">
+            <div class="stat-card">
+                <h3>Heads</h3>
+                <div class="stat-value" id="headsCount">0</div>
+            </div>
+
+            <div class="stat-card">
+                <h3>Tails</h3>
+                <div class="stat-value" id="TailsCount">0</div>
+            </div>
+        </div>
+
+        <div class="history">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                
+                <h3>Recent Flips</h3>
+                <button class="clear-button" id="clearButton">Clear history</button>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
